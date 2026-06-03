@@ -37,13 +37,6 @@ export const PRIZE_CONFIGS: PrizeConfig[] = [
     probability: 0.35,
     eligibilityNote: "Valid for Prime plan • Annual or half-yearly • ₹589/month locked for 12 months",
   },
-  {
-    id: 5,
-    tier: null,
-    label: "Better Luck Next Time",
-    probability: 0.40,
-    eligibilityNote: null,
-  },
 ];
 
 export function pickPrizeConfig(excludeTiers: CouponTier[] = []): PrizeConfig {

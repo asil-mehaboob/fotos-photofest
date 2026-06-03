@@ -31,6 +31,17 @@ model ScratchEntry {
   @@index([email])
 }
 
+model Lead {
+  id         String   @id @default(cuid())
+  name       String
+  phone      String
+  studioName String?
+  notes      String?
+  createdAt  DateTime @default(now())
+
+  @@index([phone])
+}
+
 model Coupon {
   id              String        @id @default(cuid())
   code            String        @unique
